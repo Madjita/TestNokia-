@@ -16,15 +16,15 @@ void getUnsignedInt32(unsigned long int x)
   {
     if(bitset<32>(x)[i] == 1)
     {
-      max[30-count]=1;
+      max[31-count]=1;
       min[count]=1;
       count++;
     }
        
   }
   
-  cout <<"max = "<< int(long(max.to_ulong())) <<" \t= " << bitset<32>(max) << endl;
-  cout <<"min = "<< int(long(min.to_ulong())) <<" \t\t= " << bitset<32>(min) << endl;
+  cout <<"max = "<< unsigned(long(max.to_ulong())) <<" \t= " << bitset<32>(max) << endl;
+  cout <<"min = "<< unsigned(long(min.to_ulong())) <<" \t\t= " << bitset<32>(min) << endl;
   
 }
 
